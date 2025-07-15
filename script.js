@@ -8,7 +8,7 @@ document.addEventListener("mousemove", function (dets) {
   cursorBlur.style.top = dets.y -250 +"px";
 });
 
-let navH4 = document.querySelectorAll("#navbar h4");
+let navH4 = document.querySelectorAll("#navbar h4, #navbar h3");
 
 navH4.forEach(function (elem) {
   elem.addEventListener("mouseenter",function(){
@@ -86,7 +86,7 @@ gsap.from("#food-drink img,#food-drink-text", {
     // markers:true,
     start: "top 70%",
     end: "top 65%",
-    scrub: 1,
+    scrub: 3,
   },
 });
 
@@ -113,5 +113,17 @@ gsap.from("#qoute2", {
     start: "top 55%",
     end: "top 50%",
     scrub: 4,
+  },
+});
+
+gsap.from("#page4 h1", {
+  y: 50,
+  scrollTrigger: {
+    trigger: "#page4 h1",
+    scroller: "body",
+    // markers:true,
+    start: "top 75%",
+    end: "top 70%",
+    scrub: 3,
   },
 });
