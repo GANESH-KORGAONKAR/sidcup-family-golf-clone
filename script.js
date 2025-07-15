@@ -8,6 +8,21 @@ document.addEventListener("mousemove", function (dets) {
   cursorBlur.style.top = dets.y -250 +"px";
 });
 
+let navH4 = document.querySelectorAll("#navbar h4");
+
+navH4.forEach(function (elem) {
+  elem.addEventListener("mouseenter",function(){
+    cursor.style.scale = 2;
+    cursor.style.backgroundColor = "transparent";
+    cursor.style.border = "1px solid #fff"
+  })
+  elem.addEventListener("mouseleave", function () {
+    cursor.style.scale = 1;
+    cursor.style.border = "0px solid #95C11E";
+    cursor.style.backgroundColor = "#95C11E";
+  });
+});
+
 gsap.to("#navbar", {
   backgroundColor: "#000",
   duration: 0.5,
@@ -30,5 +45,73 @@ gsap.to("#main", {
     start: "top -25%",
     end: "top -70%",
     scrub: 1,
+  },
+});
+
+gsap.from("#about-us img,#about-us-info", {
+  y: 90,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#about-us",
+    scroller: "body",
+    // markers:true,
+    start: "top 70%",
+    end: "top 65%",
+    scrub: 1,
+  },
+});
+
+// gsap.from(".card", {
+//   y: 90,
+//   opacity: 0,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: "#cards-container",
+//     scroller: "body",
+//     // markers:true,
+//     start: "top 70%",
+//     end: "top 65%",
+//     scrub: 1,
+//   },
+// });
+
+gsap.from("#food-drink img,#food-drink-text", {
+  y: 110,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#food-drink",
+    scroller: "body",
+    // markers:true,
+    start: "top 70%",
+    end: "top 65%",
+    scrub: 1,
+  },
+});
+
+gsap.from("#qoute1", {
+  y: -80,
+  x: -80,
+  scrollTrigger: {
+    trigger: "#qoute1",
+    scroller: "body",
+    // markers:true,
+    start: "top 55%",
+    end: "top 50%",
+    scrub: 4,
+  },
+});
+
+gsap.from("#qoute2", {
+  y: 80,
+  x: 80,
+  scrollTrigger: {
+    trigger: "#qoute1",
+    scroller: "body",
+    // markers:true,
+    start: "top 55%",
+    end: "top 50%",
+    scrub: 4,
   },
 });
