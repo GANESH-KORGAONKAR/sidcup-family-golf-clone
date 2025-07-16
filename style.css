@@ -12,23 +12,23 @@ body {
 }
 
 *::selection {
-  background-color: #fff;
-  color: #95c11e;
+    background-color: #fff;
+    color: #95c11e;
 }
 
 body::-webkit-scrollbar {
-  display: block;
-  width: 5px;
-  background: #95c11e;
+    display: block;
+    width: 5px;
+    background: #95c11e;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border-radius: 50px;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #navbar {
@@ -185,13 +185,13 @@ video {
 }
 
 #page1 #arrow i {
-  font-size: 50px;
-  font-weight: 100;
+    font-size: 50px;
+    font-weight: 100;
 }
 
 #page1 #arrow:hover {
-  scale: 0.4;
-  background-color: #95c11e;
+    scale: 0.4;
+    background-color: #95c11e;
 }
 
 #page1 p {
@@ -537,9 +537,9 @@ video {
 
 #bgimg {
     position: absolute;
-  left: 0;
-  height: 100%;
-  z-index: 0;
+    left: 0;
+    height: 100%;
+    z-index: 0;
 }
 
 #logo {
@@ -562,35 +562,39 @@ video {
     font-size: 35px;
 }
 
-#logo, #text1, #text2, #text3 {
+#logo,
+#text1,
+#text2,
+#text3 {
     width: fit-content;
-  position: relative;
-  z-index: 99;
+    position: relative;
+    z-index: 99;
 }
 
 #text1 h4 {
-  font-size: 1.6vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 900;
-  margin-bottom: 8px;
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
 }
 
 #text2 h4 {
-  font-size: 1.6vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 800;
-  margin-bottom: 8px;
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
+
 #text3 h5 {
-  font-size: 1vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 600;
-  line-height: 20px;
-  margin-bottom: 8px;
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
 }

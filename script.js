@@ -4,18 +4,18 @@ let cursorBlur = document.querySelector("#cursor-blur");
 document.addEventListener("mousemove", function (dets) {
   cursor.style.left = dets.x - 12 + "px";
   cursor.style.top = dets.y - 12 + "px";
-  cursorBlur.style.left = dets.x -250 +"px";
-  cursorBlur.style.top = dets.y -250 +"px";
+  cursorBlur.style.left = dets.x - 250 + "px";
+  cursorBlur.style.top = dets.y - 250 + "px";
 });
 
 let navH4 = document.querySelectorAll("#navbar h4, #navbar h3");
 
 navH4.forEach(function (elem) {
-  elem.addEventListener("mouseenter",function(){
+  elem.addEventListener("mouseenter", function () {
     cursor.style.scale = 2;
     cursor.style.backgroundColor = "transparent";
-    cursor.style.border = "1px solid #fff"
-  })
+    cursor.style.border = "1px solid #fff";
+  });
   elem.addEventListener("mouseleave", function () {
     cursor.style.scale = 1;
     cursor.style.border = "0px solid #95C11E";
